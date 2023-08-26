@@ -1,1 +1,225 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+     background-image: url("./assets/img/background.png");
+     background-size: cover;
+     background-repeat: none;
+     overflow-x: hidden;
+     overflow-y: hidden;
+ }
+ .inventarioOpen{
+     position: absolute;
+     width: 60vw;
+     height: 30vw;
+     left: 15vw;
+     background-image: url(./assets/img/menu.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     z-index: 1000;
+     margin: 0 auto;
+ }
+ .bar{
+     height: 13vw;
+     width: 100vw;
+     background-color: rgba(51, 62, 86, 0.811);
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     border-radius: 5vw 5vw 0 0;
+ }
+ .magoImg{
+     height: 40vw;
+     width: auto;
+     position: absolute;
+     bottom: -10vw;
+     left: 0;
+ 
+ }
+ .name{
+     position: absolute;
+     color: aliceblue;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: bold;
+     letter-spacing: 0.5vw;
+     left: 27vw;
+ }
+ .equip{
+    position: absolute;
+    transform: scale(-1, -1);
+     	background-image: url(./assets/img/menu.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 7vw;
+        height: 30vw;
+        left: -0.3vw;
+        top: -0.3vw;
+       
+ }
+ .containerEquip{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 1vw 0vw;
+    left: 2.8vw;
+    top: 7vw;
+ }
+ .hpPerson{
+     position: absolute;
+     top: 5vw;
+     left: 27vw;
+     height: 1vw;
+     width: 20vw;
+ }
+ .mpPerson{
+     position: absolute;
+     top: 7vw;
+     left: 28vw;
+     height: 1vw;
+     width: 20vw;
+ }
+ .tpPerson{
+     position: absolute;
+     top: 9vw;
+     left: 29vw;
+     height: 1vw;
+     width: 20vw;
+ }
+ .bossName{
+    position: absolute;
+    left: 15vw;
+    color: aliceblue;
+    font-size: 1.6vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3vw;
+    top: -0.5vw;
+ }
+ .enemyHP{
+    position: absolute;
+    top: 3.5vw;
+    left: 15vw;
+    height: 1vw;
+    width: 60vw;
+   
+}
+ .enemyHP::-webkit-progress-value{
+    background-image: linear-gradient(to right, rgb(189, 32, 32), rgb(100, 2, 2));
+    border-radius: 10vw;
+}
+.enemyHP::-webkit-progress-bar{
+    background-color: rgba(203, 203, 203, 0.872);
+    border-radius: 10vw;  
+}
+.hpPerson::-webkit-progress-bar{
+    background-color: rgba(203, 203, 203, 0.872);
+    border-radius: 10vw;  
+}
+ .hpPerson::-webkit-progress-value{
+     background-image: linear-gradient(to right, rgb(149, 0, 0), rgb(104, 8, 8));
+     border-radius: 10vw;
+    
+ }
+ .hpPerson::-webkit-progress-bar{
+     background-color: rgba(203, 203, 203, 0.872);
+     border-radius: 10vw;  
+ }
+ .mpPerson::-webkit-progress-value{
+     background-image: linear-gradient(to right, rgb(0, 129, 149), rgb(0, 7, 149));
+     border-radius: 10vw;
+    
+ }
+ .mpPerson::-webkit-progress-bar{
+     background-color: rgba(203, 203, 203, 0.872);
+     border-radius: 10vw;
+    
+ }
+ .tpPerson::-webkit-progress-value{
+     background-image: linear-gradient(to right, rgb(204, 255, 0), rgb(4, 100, 21));
+     border-radius: 10vw;
+    
+ }
+ .tpPerson::-webkit-progress-bar{
+     background-color: rgba(203, 203, 203, 0.872);
+     border-radius: 10vw;
+    
+ }
+ .containerHabilidades{
+     position: absolute;
+     width: 25vw;
+     height: 16vw;
+    background-image: url(./assets/img/menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+     right: 3vw;
+     top: -7vw;
+     display: grid;
+     grid-template-columns: repeat(5, 1fr); 
+     grid-gap: 0vw 0vw;
+     padding: 4vw 3vw;
+ }
+ .inventario{
+     position: absolute;
+     width: 13vw;
+     height: 11vw;
+     background-image: url(./assets/img/chest.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     right: 35vw;
+     top: -1vw;
+ }
+ .inventario:hover{
+    position: absolute;
+    width: 17vw;
+    height: 16vw;
+    background-image: url(./assets/img/chestOpen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 32vw;
+    top: -5vw;
+}
+.inventario:active{
+    transform: scale(0.8);
+}
+ .espacioHabilidad{
+     width: 3vw;
+     height: 3vw;
+     background-color: rgb(29, 28, 28);
+     border-image: linear-gradient(to right, yellow, rgb(170, 63, 18));
+     border-image-slice: 1;
+     border-image-width: 0.3vw;
+     border-style:  outset;
+    
+ }
+ .espacioHabilidad:hover{
+     border-image: linear-gradient(to right, rgb(233, 233, 155), rgb(246, 115, 59));
+     border-image-slice: 1;
+     border-image-width: 0.3vw;
+     border-style:  outset;
+     box-shadow: 0px 0px 20px 0px rgb(254, 233, 0);
+ }
+ .stats{
+     color: aliceblue;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: bold;
+     font-size: 1vw;
+   
+ }
+ .hp{
+    position: relative;
+    left:22.5vw;
+    top: 3.9vw;
+ }
+ .mp{
+    position: relative;
+    left:23.8vw;
+    top: 3.7vw;
+ }
+ .tp{
+    position: relative;
+    left:24.9vw;
+    top: 3.6vw;
+ }
+ .enemy{
+     position: absolute;
+     left: 30vw;
+     width: 35vw;
+ }
